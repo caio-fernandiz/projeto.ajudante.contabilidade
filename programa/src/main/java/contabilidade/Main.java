@@ -9,10 +9,12 @@ import java.awt.event.ActionListener;
 
 
 public class Main {
+
+    private static float numSomar;
+    private static float numTotal = 0;
+
     public static void main(String[] args) {
-        float numSomar;
-        float numTotal=0;
-        
+
         //Janela denominada 'somador'
         JFrame somador = new JFrame();
          //Botão que soma os números
