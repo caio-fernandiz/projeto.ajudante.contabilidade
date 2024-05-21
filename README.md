@@ -7,3 +7,7 @@ Móveis - 500,00
 Computador - 1000,00
 
 Mas até o momento ele está em fase inicial, é um projeto feito por um iniciante em programação
+
+Atualizações 
+
+Agora ele possui uma janela maior, que irei melhorar com o tempo, por enquanto os resultados só aparecem no terminal, isso será alterado para que apareça na janela
