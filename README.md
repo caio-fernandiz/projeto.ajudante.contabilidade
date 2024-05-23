@@ -11,3 +11,7 @@ Mas até o momento ele está em fase inicial, é um projeto feito por um inician
 Atualizações 
 
 Agora ele possui uma janela maior, que irei melhorar com o tempo, por enquanto os resultados só aparecem no terminal, isso será alterado para que apareça na janela
+
+Atualizações 
+
+Agora já possui uma lista e uma caixa de texto que mostra o resultado da conta
