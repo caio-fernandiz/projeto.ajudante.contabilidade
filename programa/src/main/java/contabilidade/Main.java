@@ -30,7 +30,7 @@ public class Main {
         //Caixa de texto que indica aonde o usuário deve digitar os valores
         JLabel indicaValores = new JLabel("Valores");
 
-        //Caixa de texto que indica aondeo o usuário deve digitar o nome de cada item da lista
+        //Caixa de texto que indica aondeo o usuário deve digitar cada item da lista
         JLabel indicaItens = new JLabel("Itens");
 
         //Caixa de texto que indica aonde irá o resultado total da soma de valores
@@ -39,15 +39,22 @@ public class Main {
         //Caixa de texto que o usuário vai digitar os números
         JTextField digitarValores = new JTextField();
 
+        //Caixa de texto que o usuárioo vai digitar os itens da lista 
+        JTextField digitarItens = new JTextField();
+
         //Caixa de texto que o usuário vai ver os resultado total da soma de valores
         JTextField mostraResultados = new JTextField();
 
-        //Caixa de texto que mostra a lista de valores inseridos
+        //Caixa que mostra a lista de valores inseridos
         JTextArea listaValores = new JTextArea("Valores\n");
+
+        //Caixa que mostra a list de itens inseridos
+        JTextArea listaItens = new JTextArea("Itens\n");
 
 
         //Definindo o tramanho, largura e coordenadas do botão
         botaoAdicionar.setBounds(650, 40, 100, 30);
+
         //função para quando o botão for clicado
         botaoAdicionar.addActionListener(new ActionListener(){
 
@@ -66,6 +73,10 @@ public class Main {
 
                 //Envia o resultado da soma usando o metodo df
                 mostraResultados.setText(df.format(numTotal));
+
+                String itens = digitarItens.getText();
+
+                listaItens.append(itens + "\n");
             }
         });
 
@@ -81,11 +92,17 @@ public class Main {
         //Definindo o tamanho, largura e coordenas da caixa de texto aonde o usuário vai digitar os valores
         digitarValores.setBounds(440, 40 , 200, 30);
 
+        //Definindo o tamanho, largura e coordenas da caixa de texto aonde o usuário vai digitar os itens
+        digitarItens.setBounds(30, 40, 200, 30);
+
         //Definindo o tamanho, largura e coordenas da caixa de texto aonde o usuário vai ver os resultados
         mostraResultados.setBounds(440, 330, 200, 30);
 
-        //Definindo o tamanho, largura e coordenas da caixa de texto que vai mostrar os valores inseridos pelo usuário
+        //Definindo o tamanho, largura e coordenas da caixa que vai mostrar os valores inseridos pelo usuário na lista
         listaValores.setBounds(440, 80, 311, 200);
+
+        //Definindo o tamanho, largura e coordenas da caixa que vai mostrar os itens inseridos pelo usuário na lista
+        listaItens.setBounds(30, 80, 311, 200 );
 
         //Adição do botão na janela
         somador.add(botaoAdicionar);
@@ -99,14 +116,20 @@ public class Main {
         //Adição do indicador do resultado da soma de valores
         somador.add(indicaResultadoValores);
 
-        //Adição da caixa de texto editavel pelo usuário
+        //Adição da caixa de texto que o usuário adiciona os valores 
         somador.add(digitarValores);
+
+        //Adição da caixa de texto que o usuário adiciona os itens
+        somador.add(digitarItens);
 
         //Adilção da caixa de texto que irá mostrar os resultado da soma dos valores
         somador.add(mostraResultados);
 
         //Adição da caixa de texto que mostra a lista de valores inseridos pelo usuário
         somador.add(listaValores);
+
+        //Adição da caixa que mostra a lista de itens inseridos pelo usuário
+        somador.add(listaItens);
 
         //Essa linha faz com que a janela fique nula, me obrigadno a definir o tamanho e coordenas dos componentes dentro dela.
         somador.setLayout(null);
