@@ -8,10 +8,10 @@ Computador - 1000,00
 
 Mas até o momento ele está em fase inicial, é um projeto feito por um iniciante em programação
 
-Atualizações 
+Atualizaçãoo 1.0
 
 Agora ele possui uma janela maior, que irei melhorar com o tempo, por enquanto os resultados só aparecem no terminal, isso será alterado para que apareça na janela
 
-Atualizações 
+Atualização 1.1
 
 Agora já possui uma lista e uma caixa de texto que mostra o resultado da conta
