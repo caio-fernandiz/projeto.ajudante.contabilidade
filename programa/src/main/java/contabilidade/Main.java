@@ -101,9 +101,6 @@ public class Main {
                 //Essa string serve para pegar o item informado, assim o botão envia para a lista 
                 String itens = digitarItens.getText();
 
-                //aqui é aonde o botão envia o item informado para a lista
-                listaItens.append(itens + "\n");
-
                 if(itens.equals("")){
                     JOptionPane.showMessageDialog(null, "Você precisa informar o item", "AVISO", JOptionPane.WARNING_MESSAGE);
 
@@ -121,6 +118,10 @@ public class Main {
 
                 //Envia o resultado da soma usando o metodo df
                 mostraResultados.setText(df.format(numTotal));
+
+                //aqui é aonde o botão envia o item informado para a lista
+                listaItens.append(itens + "\n");
+
                 }
             }
         });
