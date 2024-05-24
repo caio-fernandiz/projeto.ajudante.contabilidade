@@ -15,3 +15,11 @@ Agora ele possui uma janela maior, que irei melhorar com o tempo, por enquanto o
 Atualização 1.1
 
 Agora já possui uma lista e uma caixa de texto que mostra o resultado da conta
+
+Atualização 1.2
+
+Agora o usuário pode adicionar itens junto da lista de itens 
+
+Atualização 1.3 
+
+Caso a caixa que você deve informar o item esteja vazia, o usuário será avisado e não poderá incluir o valor na soma
